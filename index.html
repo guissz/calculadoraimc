@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="img">
+            <img src="images/fit.svg" id="img">
+        </div>
+        <div id="calculadora">
+            <form action="#" id="form">
+                <h2>Calculadora - IMC</h2>
+                <div id="input-group">
+                    <div id="input-item">
+                        <label for="altura">Altura(m)</label>
+                        <div id="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" step="0.01" id="altura">
+                            <span>m</span>
+                        </div>
+                    </div>
+                    <div id="input-item">
+                        <label for="peso">Peso(kg)</label>
+                        <div id="input-field">
+                            <i class="fa-solid fa-weight-hanging"></i>
+                            <input type="number" id="peso">
+                            <span>kg</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="calcular">Calcular</button>
+            </form>
+            <div id="informacoes" class="hidden">
+                <div id="resultado">
+                    <div id="bmi">
+                        <span id="valor"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
